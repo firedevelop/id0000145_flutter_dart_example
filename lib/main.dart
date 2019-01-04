@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './0001_Container_RichText_TextSpan.dart';
+import './0001_RichText_TextSpan.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,7 +22,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: new Home(),
+      home: new F0001()
+
     );
   }
 }
