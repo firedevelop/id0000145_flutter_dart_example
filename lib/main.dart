@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import './F0001_TextSpan.dart';
-import './F0002_Stack.dart';
+import './F0004a2_Row.dart';
+import 'F0001_TextSpan.dart';
+import 'F0005_Expanded.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: new F0002()
+      home: new F0004a2()
 
     );
   }
