@@ -7,8 +7,6 @@ class F0001 extends StatelessWidget {
       color: Colors.greenAccent,
       alignment: Alignment.center,
 
-
-
       child: new Stack(
         alignment: Alignment.bottomCenter,
         children: <Widget>[
