@@ -1,47 +1,42 @@
 import 'package:flutter/material.dart';
 
-class F0008a3 extends StatelessWidget{
+class F0008a4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
+      title: 'myApp',
       home: Scaffold(
-        appBar: AppBar(title: Text('appBar Myapp'),backgroundColor: Colors.green,),
+        appBar: AppBar(title: Text('myApp'), backgroundColor: Colors.green),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-           DecoratedBox(decoration: BoxDecoration(color: Colors.blue),
-            child: Padding(padding: EdgeInsets.all(20),
-              child: Text('DecoratedBox MyApp', style: TextStyle(color: Colors.redAccent, fontSize: 20, fontWeight: FontWeight.bold),),),
-          ),
-           SizedBox(height: 8),
-           DecoratedBox(decoration: BoxDecoration(color: Colors.blue),
-             child: Padding(padding: EdgeInsets.all(20),
-               child: Text('DecoratedBox MyApp', style: TextStyle(color: Colors.redAccent, fontSize: 20, fontWeight: FontWeight.bold),),),
-           ),
-           SizedBox(height: 8),
-           DecoratedBox(decoration: BoxDecoration(color: Colors.blue),
-             child: Padding(padding: EdgeInsets.all(20),
-               child: Text('DecoratedBox MyApp', style: TextStyle(color: Colors.redAccent, fontSize: 20, fontWeight: FontWeight.bold),),),
-           ),
+              SizedBox(height: 8,),
+              DogName('Rocky'),
+              SizedBox(height: 8,),
+              DogName('Pumpi'),
+              SizedBox(height: 8,),
+              DogName('Lumpi'),
             ],
-      ),
+          ),
         ),
-    ),
+      ),
     );
   }
 }
 
-class DogName extends StatelessWidget{
+class DogName extends StatelessWidget {
   final String name;
-  const DogName(this.name);
 
+  DogName(this.name);
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return DecoratedBox(decoration: BoxDecoration(color: Colors.blue),
-      child: Padding(padding: EdgeInsets.all(20),
+    return DecoratedBox(
+      decoration: BoxDecoration(color: Colors.amber),
+      child: Padding(
+        padding: EdgeInsets.all(8),
         child: Text(name),
       ),
     );
